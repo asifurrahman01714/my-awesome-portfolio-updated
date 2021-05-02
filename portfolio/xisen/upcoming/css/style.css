@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&amp;family=Titillium+Web:wght@300;400;600;700;900&amp;display=swap");
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+main{
+    min-height: 100vh !important;
+    
+}
+.one_page {
+  background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+}
+
+.one_page .main_content h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 70px;
+  letter-spacing: 1.2px;
+}
+
+.one_page .main_content p {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.one_page .main_content .input-group {
+  width: 30%;
+}
+
+.one_page .time-count {
+  background-color: #f1f1f5;
+  font-size: 40px;
+  color: #3F51B5;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 3px;
+  width: 10%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.one_page .time-count span {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.one_page .time-count:nth-child(2) {
+  color: #149D5A;
+}
+
+.one_page .time-count:nth-child(3) {
+  color: rebeccapurple;
+}
+
+.one_page .time-count:nth-child(4) {
+  color: #ff4646;
+}
+
+@media (max-width: 991px) {
+  .time-count {
+    width: 20% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .input-group {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .input-group {
+    width: 100% !important;
+  }
+  .btn-cont {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main_content h1 {
+    font-size: 40px !important;
+  }
+  .main_content p {
+    font-size: 18px !important;
+  }
+  .time-count {
+    width: 35% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

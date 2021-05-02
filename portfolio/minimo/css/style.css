@@ -1,0 +1,169 @@
+nav ul li a {
+    text-transform: uppercase;
+}
+
+.img img {
+    width: 100%;
+}
+
+ h1{
+    
+text-transform: capitalize;
+    
+color: #626262;
+    
+margin-top: 10px;
+    
+margin-bottom: 17px;
+    
+font-size: 30px;
+}
+
+span{
+
+margin-top: 23px;
+
+font-size: 25px;
+
+text-transform: capitalize;
+
+color: #626262;
+
+display: block;
+margin-bottom: 20px;
+}
+ p{
+    
+color: #626262;
+}
+
+.image img{
+    width: 100%;
+}
+
+.lifestyle{
+    
+margin-bottom: 75px;
+}
+
+.sign_up{
+
+background: #62626233;
+
+/* margin-bottom: 54px; */
+
+height: 200px;
+}
+
+.content{
+
+text-align: center;
+
+position: relative;
+}
+.content h1{
+    
+}
+.content input{
+    
+/* margin-right: 0px; */
+    
+/* padding-top: 46px; */
+    
+background: none;
+    
+border: none;
+    
+border-bottom: 1px solid;
+    
+width: 35%;
+    
+margin-top: 32px;
+}
+.icon{
+
+position: absolute;
+
+top: 74%;
+
+right: 32%;
+}
+.icon img{
+    
+}
+
+.load_more{
+
+/* top: 237%; */
+
+position: absolute;
+
+left: 43%;
+
+/* bottom: 7%; */
+
+margin-top: 100px;
+}
+.load_more input{/* position: absolute; *//* left: 50%; */height: 39px;width: 111px;border-radius: 10px;}
+.button{
+    
+height: 200px;
+    
+/* background: red; */
+    
+position: relative;
+}
+
+footer{
+    height: 100px;
+    background: #e0e0e0;
+}
+    
+.contents{
+
+display: flex;
+
+justify-content: space-between;
+
+padding-top: 35px;
+}
+
+.terms{
+
+width: 55%;
+
+/* display: flex; */
+
+/* float: left; */
+}
+.terms ul{
+
+list-style: none;
+}
+.terms ul li{
+
+text-decoration: none;
+}
+.terms ul li a{
+
+float: left;
+
+margin-left: 15px;
+}
+.follow{width: 50%;}
+.follow ul{
+
+list-style: none;
+
+float: right;
+}
+.follow ul li{
+
+float: left;
+}
+.follow ul li a{
+
+/* float: left; */
+
+margin-right: 20px;
+}

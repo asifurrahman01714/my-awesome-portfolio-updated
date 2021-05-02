@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.preloader{
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #042104;
+    animation: animateBg 10s linear infinite;
+}
+
+@keyframes animateBg{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.preloader .loader{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.preloader .loader span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+
+.preloader .loader span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: #00ff0a;
+    box-shadow: 0 0 10px  #00ff0a,
+                0 0 20px  #00ff0a,
+                0 0 40px  #00ff0a,
+                0 0 60px  #00ff0a,
+                0 0 80px  #00ff0a,
+                0 0 100px  #00ff0a;
+     border-radius: 50%;   
+     animation: animate 2s linear infinite;   
+     animation-delay: calc(0.1s * var(--i));    
+}
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+
+    80%,100%{
+        transform: scale(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0c0000;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.navbar{
+    padding: 20px 0px;
+}
+.logo img{
+    width: 100%;
+}
+
+.banner{
+    background-image: url(../images/background_image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    position: relative;
+}
+
+.content{
+
+}
+.content h1{
+    
+color: #ffff;
+    
+font-size: 80px;
+}
+.content p{
+    
+color: white;
+    
+margin: 20px 0px 35px;
+    
+font-size: 21px;
+}
+.content span{
+    
+background: #007bff;
+    
+height: 2px;
+    
+width: 100%;
+    
+display: inline-block;
+}
+
+.fa_icon{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    animation:icon-ani 2.2s linear infinite;
+    animation-direction: alternate;
+    bottom: -49%;
+    margin-top: 65px;
+}
+.fa_icon i{
+    color: white;
+    font-size: 30px;
+    
+}
+
+@keyframes icon-ani{
+    0%{
+        transform: translate(-75%, -100%);
+        -webkit-transform: translate(-75%, -100%);
+        -moz-transform: translate(-75%, -100%);
+        -ms-transform: translate(-75%, -100%);
+        -o-transform: translate(-75%, -100%);
+}
+    100%{
+        transform: translate(-70%, 0%);
+        -webkit-transform: translate(-70%, 0%);
+        -moz-transform: translate(-70%, 0%);
+        -ms-transform: translate(-70%, 0%);
+        -o-transform: translate(-70%, 0%);
+        } 
+}
+
+
+.btn-custom{
+
+background: transparent;
+
+width: 157px;
+
+}
+
+.hg{
+    height:600px;;
+}
+.design{
+    background: #f6f9f9;
+}
+.design_content{
+
+}
+.design_content h1{
+    
+color: #2d3950;
+    
+text-transform: capitalize;
+    
+font-size: 50px;
+}
+.design_content p{
+    
+color: #999999;
+}
+
+.icon_box{
+
+height: 100px;
+
+color: white;
+
+width: 100px;
+
+background: red;
+
+font-size: 45px;
+
+text-align: center;
+
+line-height: 100px;
+
+margin: auto;
+
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#21adff+50,48baff+50 */
+background: rgb(33,173,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(33,173,255,1) 50%, rgba(72,186,255,1) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(33,173,255,1) 50%,rgba(72,186,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(33,173,255,1) 50%,rgba(72,186,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21adff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+
+
+}
+.icon_box i{
+
+}
+.feature_content{
+
+}
+.feature_content h5{
+    
+text-transform: capitalize;
+    
+margin: 20px 0;
+    
+font-size: 25px;
+}
+.feature_content p{
+    
+color: #99;
+    
+color: #99999;
+    
+color: #656565;
+}
+.showcase{
+    
+background: #f6f9f9;
+}
+.showcase_content{
+
+}
+.showcase_content h1{
+    
+margin: 0px 0px 20px 0;
+    
+color: #2d3950;
+    
+text-transform: capitalize;
+    
+font-size: 47px;
+}
+.showcase_content h6{
+     
+color: #909090;
+     
+font-size: 20px;
+}
+
+.image{
+    position: relative;
+    /* margin: 15px 0; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.image::before{
+    content: '';
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: #48baff7a;
+    position: absolute;
+    transition: all .4s ease;
+}
+
+.image:hover::before{
+    bottom: 100%;
+    height: 100%;
+
+}
+.image img{
+
+width: 100%;
+}
+
+
+.icon{
+
+    position: absolute;
+    
+    top: 50%;
+    
+    left: 50%;
+    
+    color: white;
+    
+    transform: translate(-50%, -50%);
+    
+    font-size: 25px;
+    opacity: 0;
+    transition: all .4s ease;
+}
+    
+.icon i{
+    
+border: 1px solid;
+    
+height: 40px;
+    
+width: 41px;
+    
+/* text-align: center; */
+    
+padding: 8px;
+    
+border-radius: 5px;
+    
+color: #18aaf1;
+    }
+
+    .image:hover .icon{
+        opacity: 1;
+    }
+
+
+    .image:hover img{
+        transform: scale(1.1);
+        transition: all .4s ease;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+    }
+    
+
+
+.contact{
+    background-image: url(../images/contact-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+.dg{
+
+position: inherit;
+}
+
+.contact ::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #2b364a0a;
+}
+
+
+.contact_content{
+    text-transform: capitalize;
+    color: #fff;
+    /* padding-bottom: 123px; */
+    /* margin-bottom: 20px; */
+}
+.contact_content h1{
+
+font-size: 48px;
+}
+.contact_content h5{
+
+font-size: 25px;
+}
+
+form input{
+
+width: 100%;
+
+height: 40px;
+
+margin-bottom: 13px;
+
+border: 1px solid;
+
+border-color: #d8debf;
+
+border-radius: 5px;
+
+background: transparent;
+}
+form textarea{
+
+width: 100%;
+
+border: 1px solid #cdd6a4;
+
+border-radius: 5px;
+
+background: transparent;
+color: white;
+}
+
+input::placeholder {
+    color:white;
+  }
+
+  .contact ul{
+
+/* width: 13%; */
+
+margin-top: 8px;
+}
+  .contact ul li{
+      
+color: #fff;
+      
+float: left;
+      
+margin-right: 16px;
+      
+font-size: 22px;
+}
+.contact button{
+    
+float: right;
+    
+background: transparent;
+    
+width: 90px;
+}
+footer{
+
+background: #6666;
+
+}
+.copywrite{
+
+display: flex;
+
+justify-content: space-between;
+padding-top: 20px;
+}
+.copywrite h4{
+
+color: #ffffffcc;
+}
+.copywrite ul{
+
+display: flex;
+
+
+}
+.copywrite ul li{
+
+
+}
+.copywrite ul li i{
+
+background: #2196F3;
+
+margin: 20px;
+
+height: 39px;
+
+width: 37px;
+
+text-align: center;
+
+margin-inline-end: auto;
+
+line-height: 32px;
+}
+.copywrite ul li i {
+        background: #2196F3;
+        margin: 20px;
+        height: 47px;
+        width: 75px;
+        text-align: center;
+        margin-inline-end: auto;
+        line-height: 44px;
+        width: 46px;
+        font-size: 28px;
+    }
+    .copywrite {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .copywrite h4 {
+        color: #ffffffcc;
+        font-size: 38px;
+        margin-top: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

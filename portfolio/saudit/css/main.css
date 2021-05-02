@@ -1,0 +1,918 @@
+/* ====================================================
+  Template Name: HTML5 landing page
+  Template URI: https://asifjalil.xyz
+  Description: HTML5 landing page
+  Author: Asif
+  Author URI: https://asifjalil.xyz/
+  version: 1.0
+==================================================== */
+
+/* CSS Index
+------------------------------------
+
+01. Template Default CSS 
+02. header css
+
+
+
+
+
+
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #ef831d;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  border-radius: 4px;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: -1;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+
+.sec-pad-top {
+  padding-top: 120px;
+}
+
+.sec-pad-bottom {
+  padding-bottom: 90px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+
+
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/* ..................................
+ 02. home css 
+.................................. */
+.home {
+  height: 100vh;
+  background-image: url(../img/home/home-bg.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-content h5 {
+  font-size: 21px;
+  color: #ef831d;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home-content h1 {
+  color: #404040;
+  font-size: 44px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.home-content h1:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  background: #ef831d;
+}
+
+.home-content p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #33435c;
+  margin-bottom: 20px;
+}
+
+.home-btn {
+  width: 160px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.home-btn i {
+  margin-left: 5px;
+}
+
+.home-parallax {
+  left: unset;
+  right: -100px;
+}
+
+.home-parallax img {
+  max-width: 100%;
+}
+
+/* ..................................
+ 01. service CSS 
+.................................. */
+.service {
+  background: #f0f6f6;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #33435c;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title h3:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #ef831d;
+  animation: cs 2s infinite linear;
+  -webkit-animation: cs 2s infinite linear;
+}
+
+@keyframes cs {
+  0% {
+    width: 20px;
+  }
+
+  50% {
+    width: 60px;
+  }
+
+  100% {
+    width: 20px;
+  }
+
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #65738b;
+}
+
+.single-service {
+  background: #ffffff;
+  padding: 30px;
+  height: 180px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.single-service:hover {
+  box-shadow: 0px 39px 118px -26px rgba(39, 57, 79, 0.53);
+}
+
+.single-service.big {
+  display: flex;
+  align-items: center;
+}
+
+.single-service.big img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.single-service.small img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.single-service h4 {
+  color: #33435c;
+  text-transform: capitalize;
+}
+
+.single-service.big h4 {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.single-service.small h4 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.service-call {
+  margin-top: 50px;
+}
+
+.service-btn {
+  width: 255px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.service-call p {
+  color: #6d6d7a;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* ..................................
+ 01. c2a CSS 
+.................................. */
+.c2a {
+  background: url(../img/c2a-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.c2a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(239, 131, 29, 0.9) 40%, rgba(239, 131, 29, 0.3) 60%, rgba(239, 131, 29, 0) 100%);
+}
+
+.c2a-img {
+  width: 450px;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+.c2a-img img {
+  width: 100%;
+}
+
+.c2a-content h5,
+.c2a-content h3,
+.c2a-content .exp .exp-text,
+.c2a-content .time p,
+.c2a-content .time span {
+  color: #fff;
+}
+
+.c2a-content h5 {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.c2a-content h5 span {
+  font-size: 20px;
+  display: inline-block;
+  padding: 7px 8px;
+  background: #a15610;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-left: 5px;
+}
+
+.c2a-content h3 {
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.c2a-content h3 i {
+  display: inline-block;
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  line-height: 32px;
+  transform: translateY(-4px) rotate(-45deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-4px) rotate(-45deg);
+  -moz-transform: translateY(-4px) rotate(-45deg);
+  -ms-transform: translateY(-4px) rotate(-45deg);
+  -o-transform: translateY(-4px) rotate(-45deg);
+}
+
+.c2a-content .exp {
+  width: 400px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background: #ff6600;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.c2a-content .exp .exp-logo {
+  height: 100%;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  background: #b85e0b;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+}
+
+.c2a-content .exp .exp-logo img {
+  width: 50px;
+}
+
+.c2a-content .exp .exp-text {
+  height: 100%;
+  padding: 10px 10px 10px 20px;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 35px;
+}
+
+.c2a-content .time p {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.c2a-content .time span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+
+
+/* ..................................
+ 01. traffic CSS 
+.................................. */
+.traffic .section-title {
+  margin-bottom: 90px;
+}
+
+.section-title h5 {
+  font-size: 22px;
+  color: #ef831d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.traffic-content-title {
+  margin-bottom: 30px;
+}
+
+.traffic-content-title h6 {
+  font-size: 19px;
+  color: #ef831d;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.traffic-content-title h4 {
+  color: #27394f;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.traffic-content p {
+  color: #3b4d68;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.content-stepping {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: 2px solid #f1f1f1;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #636363;
+}
+
+.content-stepping ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 40px;
+  color: #364760;
+  font-weight: 500;
+}
+
+.content-stepping ul li:before {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #27394f;
+  line-height: 15px;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  -webkit-box-shadow: 0px 3px 10px 3px rgba(54, 71, 96, 0.23);
+  -moz-box-shadow: 0px 3px 10px 3px rgba(54, 71, 96, 0.23);
+  box-shadow: 0px 3px 10px 3px rgba(54, 71, 96, 0.23);
+}
+
+.traffic-btn {
+  width: 215px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+}
+
+
+.traffic-content-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ..................................
+ 01. news CSS 
+.................................. */
+.news {
+  background: url(../img/news-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.news .section-title {
+  margin-bottom: 60px;
+}
+
+/* .news .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news .row>[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+} */
+
+.conpany-founder {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(177, 177, 177, 0.3);
+  height: 100%;
+}
+
+.founder-img {
+  flex-basis: 50%;
+}
+
+.founder-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.founder-details {
+  flex-basis: 50%;
+  padding: 40px 20px 40px 40px;
+  position: relative;
+}
+
+.founder-details:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  /* left: 0; */
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+}
+
+.founder-details .name {
+  color: #e96656;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.founder-details h4 {
+  font-weight: 600;
+  color: #464646;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.founder-details .speech {
+  line-height: 24px;
+  position: relative;
+  color: #464646;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.founder-details .speech:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #ef831d;
+}
+
+.social-news {
+  padding: 20px;
+  background: #ef831d;
+  height: 100%;
+}
+
+.fb-news {
+  padding-bottom: 80px;
+  background: url(../img/fb-news-bg.png);
+}
+
+.insta-news {
+  padding: 40px 30px 30px 30px;
+  background: url(../img/insta-bg.jpg);
+}
+
+.social-news .logo-icon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.social-news .logo-icon img {
+  width: 15px;
+}
+
+.news-text {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.news-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background: #fff;
+}
+
+.news-text h5 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF;
+  line-height: 24px;
+}
+
+.news-text p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 2;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.news-text span {
+  font-size: 11px;
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  margin: 0;
+}
+
+.news-text p a {
+  display: inline;
+  color: #e96656;
+}
+
+.fb-news .logo-icon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.insta-news .news-text h5 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.insta-news .news-text h5 span {
+  color: #ef831d;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  display: inline;
+}
+
+.client-img {
+  border: 2px solid #F0F0F0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.clinet-btn {
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  font-weight: 600;
+  margin-top: 90px;
+}
+
+/* ..................................
+ 01. contact CSS 
+.................................. */
+.contact {
+  background: #33435c;
+}
+
+.contact .section-title {
+  margin-bottom: 120px;
+}
+
+.contact .section-title h3,
+.contact .section-title p {
+  color: #fff;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 60px 50px 40px 50px;
+}
+
+.contact-info img {
+  margin-bottom: 20px;
+}
+
+.contact-info h4 {
+  font-size: 20px;
+  color: #333A3F;
+  margin-bottom: 30px;
+}
+
+.contact-info-group {
+  margin-bottom: 20px;
+}
+
+.contact-info-group .title {
+  font-size: 15px;
+  color: #333A3F;
+  margin-bottom: 5px;
+}
+
+.contact-info-group .info {
+  font-size: 14px;
+  color: #333A3F;
+  font-weight: 600;
+}
+
+
+
+/* ..................................
+ 01. blog CSS 
+.................................. */
+.blog .section-title {
+  margin-bottom: 60px;
+}
+
+.single-blog {
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  transition: 0.3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.single-blog:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 39px 118px -26px rgba(39, 57, 79, 0.53);
+}
+
+.single-blog .thumbnail {
+  overflow: hidden;
+}
+
+.single-blog .thumbnail img {
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.single-blog:hover .thumbnail img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.single-blog-content {
+  padding: 20px 0;
+}
+
+.single-blog-content .title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #33435c;
+  margin-bottom: 25px;
+}
+
+.single-blog-content .meta-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.single-blog-content .meta-data .author,
+.single-blog-content .meta-data .date {
+  color: #33435c;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.single-blog-content .excerpt-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 0;
+  color: #33435c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- */

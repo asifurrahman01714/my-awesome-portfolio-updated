@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(to bottom, #0a2345, #101c35, #101526, #0c0d18, #020204) no-repeat;
+
+}
+
+
+
+
+
+.caracol{
+	padding: 100px 0px;
+	background: url(../images/Clip.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #0A2345;
+	position: relative;
+}
+
+.carasol-iteam{
+	
+text-align: center;
+	
+
+}
+.caracol h1{
+	color: #66778E;
+	font-size: 30px;
+	margin: 50px 0px;
+}
+.name{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #66778E;
+}
+.name .details{
+	color: #213A61
+}
+.carousel-indicators li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    margin-bottom: -80px;
+    height: 15px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    border: 2px solid #213A61;
+    border-radius: 50%;
+    margin-top: 70px;
+    /* color: red; */
+    background: red;
+    background-color: transparent;
+
+}
+.carousel-indicators .active {
+    background-color: #335A95;
+    border:none;
+}
+
+
+.feature-last{
+	padding: 50px 0px;
+}
+.last{
+	align-items: center;
+}
+.btn-f{
+	font-size: 14px;
+	padding: 10px 30px;
+	background: none;
+	border: none;
+	color: white;
+	border:  1px solid #153B6D;
+	border-radius: 30px;
+	margin: 62px 0px;
+	margin-top: 125px;
+}
+.btn:hover{
+	border-color: red;
+	color: red;
+}
+footer{
+	padding: 40px 0px;
+}
+.footer-sp{
+	width: 100%;
+	height: 1px;
+	display:block;
+	background: #14396A;
+}
+footer a{
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 10px;
+	color: #14396A;
+	 text-decoration: none;
+}
+footer a:hover{
+	text-decoration: none;
+	color: red;
+}

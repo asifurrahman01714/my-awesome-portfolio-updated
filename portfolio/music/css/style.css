@@ -1,0 +1,371 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background: linear-gradient(to bottom, #0a2345, #101c35, #101526, #0c0d18, #020204) no-repeat;
+}
+
+.navbar-brand img {
+    width: 55%;
+}
+.navbar-toggler img {
+    width: 58%;
+}
+.nav-item i{
+
+}
+.navbar-nav .nav-link {
+  text-transform: capitalize;
+}
+.template{
+
+}
+ h1{
+	
+color: white;
+	
+text-transform: capitalize;
+}
+.template span{
+	
+color: #48baff;
+}
+
+ p{
+	
+color: #48baff;
+	
+padding: 71px o;
+	
+margin: 22px 0px 39px 0;
+}
+.template button{
+
+color: white;
+
+border: 2px solid #3a5bd4;
+
+border-radius: 30px;
+
+padding: 9px;
+}
+.btn:hover {
+    color: #7377dc;
+}
+.template button:hover{
+
+		border-color: white;
+
+}
+.item{
+	background-image: url(../images/wave.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.item_row{
+	height: 850px;
+	align-items: center;
+}
+
+.img-fluid {
+    max-width: 160%;
+    height: auto;
+}
+.item_1{
+width: 117%;
+}
+
+
+.item-c{
+
+}
+
+
+.items img{
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.items img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+.headphone{
+	background-image: url(../images/headphone.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+	height: 347px;
+
+}
+.headphone button{
+
+color: white;
+
+border: 2px solid #3a5bd4;
+
+border-radius: 30px;
+
+padding: 5px 9px;
+
+margin-top: 30px;
+}
+.btn:hover {
+		color: #7377dc;
+	}
+.headphone button:hover{
+	
+			border-color: white;
+	
+	}
+
+.head_row{
+		
+justify-content: flex-end;
+		
+text-align: center;
+	}
+
+
+.feature{
+			background-image: url(../images/feature.bg.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+			padding-top: -20px;
+			padding: 150px 0px;
+	}
+.feature_content h1{
+		
+	}	
+
+	.feature_content span{
+		
+color: #48baff;
+	}	
+
+	.feature_1{
+
+padding-bottom: 40px;
+
+}
+
+	.feature_1 h2{
+
+color: white;
+
+font-size: 20px;
+}
+	.feature_1 p{
+
+font-size: 14px;
+
+}
+
+	.icon{
+
+color: red;
+
+}
+.icon i{
+		
+	}
+
+
+	.graphic button{
+
+		color: white;
+		
+		border: 2px solid #3a5bd4;
+		
+		border-radius: 30px;
+		
+		padding: 5px 9px;
+		
+		margin-top: 30px;
+		}
+		.btn:hover {
+				color: #7377dc;
+			}
+		.graphic button:hover{
+			
+					border-color: white;
+			
+			}
+.graphic_img{
+	
+width: 122%;
+}
+.icon img{
+	
+width: 5%;
+	
+margin-bottom: 10px;
+}
+.caracol{
+
+}
+.caracol h1{
+	
+font-size: 25px;
+	
+color: #48baff;
+}
+.name{
+
+}
+.details{
+
+}
+.carousel-item{
+
+}
+.carousel-item img{
+	
+}
+.carousel-indicators li {
+   
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    margin-left: 3px;
+
+    border: 1px solid;
+    border-radius: 64px;
+    background: #48baff;
+    
+}
+
+.carousel-item {
+    
+    width: 78%;
+    margin: 112px;
+}
+.carousel-item p{
+	
+margin: 0;
+	
+padding: 0;
+	
+color: white;
+}
+.carousel-item span{
+
+color: #46addc;
+}
+
+footer span{
+
+background: #25253b;
+
+width: 100%;
+
+height: 2px;
+
+display: inline-block;
+
+
+}
+.footer_content{display: flex;justify-content: space-between;padding: 30px 0;}
+.footer_content ul{
+	
+display: flex;
+	
+
+}
+.footer_content ul li{
+	
+margin-right: 10px;
+}
+.footer_content a{
+	
+}
+.white{
+
+}
+.footer_right{
+
+color: #006de2;
+}
+
+.discover{
+
+}
+.app{
+	padding: 50px 0px;
+}
+.app_row{
+	align-items: center;
+}
+
+.app_item img{
+	
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.app_item img:hover{
+	
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+
+.app button{
+
+color: white;
+
+border: 2px solid #3a5bd4;
+
+border-radius: 30px;
+
+padding: 9px;
+}
+.btn:hover {
+    color: #7377dc;
+}
+.app button:hover{
+
+		border-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

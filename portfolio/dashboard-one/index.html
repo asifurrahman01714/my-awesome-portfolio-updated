@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>First Dashboard</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <button class="navbar-toggler ml-auto bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-4 sidebar fixed-top ">
+                        <h4 class="mt-4 pb-4 text-white text-uppercase border_bottom">Code and coder</h4>
+                        <div class="border_bottom pb-3 pt-1">
+                            <img src="https://res.cloudinary.com/djim8shfn/image/upload/v1599157752/My%20personal%20portfolio/My_pic_skzeu3.jpg" width="20%" height="90%" class="rounded-circle" alt="">
+                        <a class="text-white ml-2 " href="#">Asif Ur Rahman</a>
+                        </div>
+                        
+                        <ul class="navbar-nav mr-auto flex-column">
+                            <li class="nav-item active current">
+                              <a class="nav-link text-white" href="#"><i class="fa fa-home fa-lg mr-3" aria-hidden="true"></i>Dashboard</a>
+                            </li>
+                            <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-user fa-lg mr-3" aria-hidden="true"></i>Profile</a>
+                              </li>
+                              <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-envelope fa-lg mr-3" aria-hidden="true"></i>Inbox</a>
+                              </li>
+                              <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-shopping-cart fa-lg mr-3" aria-hidden="true"></i>Sales</a>
+                              </li>
+                              <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-line-chart fa-lg mr-3" aria-hidden="true"></i>Analytics</a>
+                              </li>
+                              <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-bar-chart fa-lg mr-3" aria-hidden="true"></i>Chartes</a>
+                              </li>
+                              <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-table fa-lg mr-3" aria-hidden="true"></i>Tables</a>
+                              </li>
+                              <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-wrench fa-lg mr-3" aria-hidden="true"></i>Settings</a>
+                              </li>
+                              <li class="nav-item active sidebar-link">
+                                <a class="nav-link text-white" href="#"><i class="fa fa-file-text fa-lg mr-3" aria-hidden="true"></i>Documentation</a>
+                              </li>
+                          </ul>
+                    </div>
+
+
+                    <div class="col-lg-9 col-md-8 ml-auto fixed-top bg-dark top-navbar pb-3 pt-1 ">
+                        <div class="row align-items-center">
+
+                              <div class="col-md-3">
+                                  <h4 class="text-white mb-0 text-uppercase">dashboard</h4>
+                              </div>
+
+                              <div class="col-md-4">
+                                <form>
+                                  <div class="input-group">
+                                    <input class="form-control search-input" type="text" placeholder="Search" >
+                                    <!-- search-input for custom css  -->
+                                    <button class="btn btn-white search-button" type="button"><i class="fa fa-search text-danger" aria-hidden="true"></i></button>
+                                  <!-- search-button for custom css  -->
+                                  </div>
+                                  
+                                </form>
+                              </div>
+
+
+                              <div class="col-md-5">
+                                <ul class="navbar-nav mr-lg-auto">
+                                  <li class="nav-item ">
+                                    <a class="nav-link  text-white" href="#"><i class="fa fa-home icon-parent fa-comments mr-3" aria-hidden="true"></i></a>
+                                  </li>
+                                  <li class="nav-item  ">
+                                      <a class="nav-link text-white" href="#"><i class="fa fa-bell icon-parent fa-lg mr-3" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="nav-item ml-lg-auto">
+                                      <a class="nav-link text-white" data-toggle="modal" data-target="#sign-out" href="#"><i class="fa fa-sign-out icon-parent text-danger ml-auto fa-lg mr-3" aria-hidden="true"></i></a>
+                                      <!-- data-toggle use for modal class and data target use for modal id. -->
+                                    </li>
+                                  </ul>  
+                              </div>
+
+
+                        </div>
+
+
+
+        
+                    </div>
+
+
+                    <!-- end of the top navbar. -->
+
+
+                   
+
+
+                </div>
+            </div>
+         
+          
+        </div>
+      </nav>
+
+
+      <!-- end of the navbar. -->
+
+      <!-- modal start. -->
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="sign-out"> 
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Want to leave?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Press logout to leave</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Log out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal end. -->
+
+
+
+      <!-- card part start. -->
+
+
+      <section>
+        <div class="col-lg-9 col-md-8 ml-auto">
+          <div class="row pt-md-5 mt-md-5 pt-lg-0">
+            <div class="col-lg-3 col-sm-6 card-common ">
+              <div class="card " style="width:98%; ">
+                <div class="card-body d-flex justify-content-between">
+                  <i class="fa fa-shopping-cart text-warning fa-3x" aria-hidden="true"></i>
+                    <div class="text-right text-secondary">
+                      <h5 class=" card-title m-0">Sales</h5>
+                      <h3 class="card-text m-0">$135,000</h3>
+                    </div>       
+                </div>
+                <div class="card-footer">
+                  <i class="fa fa-refresh fa-common" aria-hidden="true"></i><span>Updated now</span>
+                </div>
+                
+              </div>
+              
+            </div>
+  
+            <div class="col-lg-3 col-sm-6 card-common ">
+              <div class="card " style="width:98%; ">
+                <div class="card-body d-flex justify-content-between">
+                  <i class="fa fa-credit-card text-success fa-3x" aria-hidden="true"></i>
+                    <div class="text-right text-secondary">
+                      <h5 class=" card-title m-0">Expenses</h5>
+                      <h3 class="card-text m-0">$39,000</h3>
+                    </div>       
+                </div>
+                <div class="card-footer">
+                  <i class="fa fa-refresh fa-common" aria-hidden="true"></i><span>Updated now</span>
+                </div>
+                
+              </div>
+              
+            </div>
+  
+            <div class="col-lg-3 col-sm-6 card-common ">
+              <div class="card " style="width:98%; ">
+                <div class="card-body d-flex justify-content-between">
+                  <i class="fa fa-users text-info fa-3x" aria-hidden="true"></i>
+                    <div class="text-right text-secondary">
+                      <h5 class=" card-title m-0">Users</h5>
+                      <h3 class="card-text m-0">15,000</h3>
+                    </div>       
+                </div>
+                <div class="card-footer">
+                  <i class="fa fa-refresh fa-common" aria-hidden="true"></i><span>Updated now</span>
+                </div>
+                
+              </div>
+              
+            </div>
+  
+                  <div class="col-lg-3 col-sm-6 card-common ">
+                    <div class="card  " style="width:98%; ">
+                      <div class="card-body d-flex justify-content-between">
+                        <i class="fa fa-line-chart text-danger fa-3x" aria-hidden="true"></i>
+                          <div class="text-right text-secondary">
+                            <h5 class=" card-title m-0">Visitors</h5>
+                            <h3 class="card-text m-0">45,000</h3>
+                          </div>       
+                      </div>
+                      <div class="card-footer">
+                        <i class="fa fa-refresh fa-common" aria-hidden="true"></i><span>Updated now</span>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+          </div>
+        </div>
+</section>
+  
+  <!-- card section end. -->
+
+
+
+<!-- table part start. -->
+
+
+<section>
+  <div class="col-lg-9 col-md-8 ml-auto">
+    <div class="row pt-md-5 mt-md-5 pt-lg-0">
+      
+      <!-- table one start. -->
+      <div class="col-lg-6">
+        <h2 class="text-muted text-center mb-3 mt-4 mt-lg-0 text-uppercase">Staff Salary</h2>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Salary</th>
+              <th scope="col">Date</th>
+              <th scope="col">Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>$32000</td>
+              <td>12/2/20</td>
+              <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>$2000</td>
+              <td>20/4/19</td>
+              <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>devid</td>
+              <td>$2000</td>
+              <td>18/4/19</td>
+              <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>devid</td>
+              <td>$2000</td>
+              <td>18/4/19</td>
+              <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>devid</td>
+              <td>$2000</td>
+              <td>18/4/19</td>
+              <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- table one end. -->
+      <!-- table two start. -->
+
+
+      <div class="col-lg-6">
+        <h2 class="text-muted text-center mb-3 mt-4 mt-lg-0 text-uppercase">recent payments </h2>
+        <table class="table table-striped table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Date</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>$32000</td>
+              <td>12/2/20</td>
+              <td><span class="badge badge-success w-75 table_badge  p-2">Approved</span></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>$2000</td>
+              <td>20/4/19</td>
+              <td><span class="badge badge-success w-75 p-2 table_badge ">Approved</span></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>devid</td>
+              <td>$2000</td>
+              <td>18/4/19</td>
+              <td><span class="badge badge-danger w-75 p-2  table_badge">Pending</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>devid</td>
+              <td>$2000</td>
+              <td>18/4/19</td>
+              <td><span class="badge badge-success p-2 w-75 p-2 table_badge">Approved</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>devid</td>
+              <td>$2000</td>
+              <td>18/4/19</td>
+              <td><span class="badge badge-danger p-2 w-75 p-2 table_badge">Pending</span></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">Previous</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">Next</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- table two end.  -->
+   
+    </div>
+  </div>
+</section>
+
+
+<!-- bar chart start.  -->
+
+<section>
+  <div class="col-lg-9 col-md-8 ml-auto">
+    <div class="row pt-md-5 mt-md-5 pt-lg-0">
+
+      <div class="col-lg-6 card-common" >
+        <div class="line_chart" style="width: 100%; height: 400px;" id="curve_chart">
+
+        </div>
+      </div>
+
+      <div class="col-lg-6 card-common">
+        <div class="pie_chart" style="width: 100%; height: 400px;" id="piechart">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- bar chart end.  -->
+<!-- progress/task list start  -->
+
+
+          <section class="mb-4 card-common">
+            <div class="container-fluid">
+              <div class="col-lg-9 col-md-8 ml-auto">
+                <div class="row pt-md-5 mt-md-5 pt-lg-0">
+                  
+                  <!-- progress-bar start. -->
+                  <div class="col-lg-6 bg-dark text-white progress-custom">
+                    <h2 class=" mb-5 text-center">Conversion Rate</h2>
+                    <h5 class="text-muted">Google Chrome</h5>
+                    <div class="progress">     
+                      <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+            
+                    <h5 class="text-muted pt-3">Mozilla Firefox</h5>
+                    <div class="progress">     
+                      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+            
+                    <h5 class="text-muted pt-3">Safari</h5>
+                    <div class="progress">     
+                      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+            
+                    <h5 class="text-muted pt-3">Internet Explorer</h5>
+                    <div class="progress mb-4">     
+                      <div class="progress-bar progress-bar-striped bg-nfo" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">20%</div>
+                    </div>
+                  </div>
+            
+            
+            
+            
+                  <div class="col-lg-6">
+            
+              
+                    <div class="card-hover-shadow-2x mb-3 card">
+                      <div class="card-header-tab card-header">
+                          <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp;Task Lists</div>
+                      </div>
+                      <div class="scroll-area-sm">
+                          <perfect-scrollbar class="ps-show-limits">
+                              <div style="position: static;" class="ps ps--active-y">
+                                  <div class="ps-content">
+                                      <ul class=" list-group list-group-flush">
+                                          <li class="list-group-item">
+                                              <div class="todo-indicator bg-warning"></div>
+                                              <div class="widget-content p-0">
+                                                  <div class="widget-content-wrapper">
+                                                      <div class="widget-content-left mr-2">
+                                                          <div class="custom-checkbox custom-control"> <input class="custom-control-input" id="exampleCustomCheckbox12" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox12">&nbsp;</label> </div>
+                                                      </div>
+                                                      <div class="widget-content-left">
+                                                          <div class="widget-heading">Call Sam For payments <div class="badge badge-danger ml-2">Rejected</div>
+                                                          </div>
+                                                          <div class="widget-subheading"><i>By Mickel</i></div>
+                                                      </div>
+                                                      <div class="widget-content-right"> <button data-toggle="tooltip" data-placement="top" title="success" class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="delete"> <i class="fa fa-trash"></i> </button> </div>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                          <div class="todo-indicator bg-focus"></div>
+                                          <div class="widget-content p-0">
+                                              <div class="widget-content-wrapper">
+                                                  <div class="widget-content-left mr-2">
+                                                      <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox1" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox1">&nbsp;</label></div>
+                                                  </div>
+                                                  <div class="widget-content-left">
+                                                      <div class="widget-heading">Make payment to Bluedart</div>
+                                                      <div class="widget-subheading">
+                                                          <div>By Johnny <div class="badge badge-pill badge-info ml-2">NEW</div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="widget-content-right"> <button data-toggle="tooltip" data-placement="top" title="success" class="border-0 btn-transition btn btn-outline-success" > <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="delete"> <i class="fa fa-trash"></i> </button> </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="todo-indicator bg-primary"></div>
+                                          <div class="widget-content p-0">
+                                              <div class="widget-content-wrapper">
+                                                  <div class="widget-content-left mr-2">
+                                                      <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox4" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox4">&nbsp;</label></div>
+                                                  </div>
+                                                  <div class="widget-content-left flex2">
+                                                      <div class="widget-heading">Office rent </div>
+                                                      <div class="widget-subheading">By Samino!</div>
+                                                  </div>
+                                                  <div class="widget-content-right"> <button data-toggle="tooltip" data-placement="top" title="success" class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="delete"> <i class="fa fa-trash"></i> </button> </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="todo-indicator bg-info"></div>
+                                          <div class="widget-content p-0">
+                                              <div class="widget-content-wrapper">
+                                                  <div class="widget-content-left mr-2">
+                                                      <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox2" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox2">&nbsp;</label></div>
+                                                  </div>
+                                                  <div class="widget-content-left">
+                                                      <div class="widget-heading">Office grocery shopping</div>
+                                                      <div class="widget-subheading">By Tida</div>
+                                                  </div>
+                                                  <div class="widget-content-right"> <button data-toggle="tooltip" data-placement="top" title="success" class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="delete"> <i class="fa fa-trash"></i> </button> </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="todo-indicator bg-success"></div>
+                                          <div class="widget-content p-0">
+                                              <div class="widget-content-wrapper">
+                                                  <div class="widget-content-left mr-2">
+                                                      <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox3" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox3">&nbsp;</label></div>
+                                                  </div>
+                                                  <div class="widget-content-left flex2">
+                                                      <div class="widget-heading">Ask for Lunch to Clients</div>
+                                                      <div class="widget-subheading">By Office Admin</div>
+                                                  </div>
+                                                  <div class="widget-content-right"> <button data-toggle="tooltip" data-placement="top" title="success" class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="delete"> <i class="fa fa-trash"></i> </button> </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="todo-indicator bg-success"></div>
+                                          <div class="widget-content p-0">
+                                              <div class="widget-content-wrapper">
+                                                  <div class="widget-content-left mr-2">
+                                                      <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox10" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox10">&nbsp;</label></div>
+                                                  </div>
+                                                  <div class="widget-content-left flex2">
+                                                      <div class="widget-heading">Client Meeting at 11 AM</div>
+                                                      <div class="widget-subheading">By CEO</div>
+                                                  </div>
+                                                  <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="delete"> <i class="fa fa-trash"></i> </button> </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </perfect-scrollbar>
+                  </div>
+                  <div class="d-block text-right card-footer"><button class="mr-2 btn btn-link btn-sm">Cancel</button><button class="btn btn-primary">Add Task</button></div>
+              </div>
+        
+        
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  
+      </section>
+
+          <!-- progress and task end. -->
+
+          <!-- Customer activites start. -->
+
+      <section >
+        <div class="col-lg-9 col-md-8 ml-auto">
+          <div class="row pt-md-5 mt-md-5 pt-lg-0">
+
+            <div class="col-lg-6 card-common">
+                                  
+                            <div class="card user-activity-card">
+                                <div class="card-header">
+                                    <h5>User Activity</h5>
+                                </div>
+                                <div class="card-block">
+                                    <div class="row m-b-25">
+                                        <div class="col-auto p-r-0">
+                                            <div class="u-img"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1557925704/doruk-yemenici-1593970-unsplash.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/ultraviolet/40/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="m-b-5">Timothy Husai</h6>
+                                            <p class="text-muted m-b-0">For what reason would it be advisable.</p>
+                                            <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>24 min ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-b-25">
+                                        <div class="col-auto p-r-0">
+                                            <div class="u-img"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1557925739/marek-levak-1591308-unsplash.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/office/16/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="m-b-5">Simkil Ahleu</h6>
+                                            <p class="text-muted m-b-0">That might be little bit risky to have crew</p>
+                                            <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>12 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-b-25">
+                                        <div class="col-auto p-r-0">
+                                            <div class="u-img"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1557925652/tomas-robertson-1594346-unsplash.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/office/16/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="m-b-5">John Deo</h6>
+                                            <p class="text-muted m-b-0">For what reason would it be advisable</p>
+                                            <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>2 min ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-b-25">
+                                        <div class="col-auto p-r-0">
+                                            <div class="u-img"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1557925606/chen-feng-1594580-unsplash.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/ultraviolet/40/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="m-b-5">John Deo</h6>
+                                            <p class="text-muted m-b-0">member like them. For what reason.</p>
+                                            <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>12 min ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center"> <a href="#!" class="b-b-primary text-primary" data-abc="true">View all Projects</a> </div>
+                                </div>
+                            </div>
+          
+            </div>
+
+
+
+
+
+            <div class="col-lg-6 card-common ">
+              <div class="card ">
+                <h5 class="text-center text-uppercase text-muted"> Quick Status Post</h5>
+                <div class="card_icon mt-3" style="text-align: center;">
+                  <ul class="list-inline">
+                    <li class="list-inline-item "><a href="#" class="text-muted"><i class="fa fa-pencil-square-o text-success aria-hidden="true"></i> Status</a></li>
+                    <li class="list-inline-item "><a href="#" class="text-muted"><i class="fa fa-camera text-info aria-hidden="true"></i> Photo</a></li>
+                    <li class="list-inline-item "><a href="#" class="text-muted"><i class="fa fa-map-marker text-primary aria-hidden="true"></i> Check-in</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <form action="">
+                    <input type="text" class="form-control" placeholder="What's tour status..?">
+                    <button type="submit" class="btn btn-primary mt-4 form-control"> Submit</button>
+                  </form>
+
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <div class="card">
+                        <i class="fa fa-calendar calendar text-warning" style="font-size: 90px;" aria-hidden="true"></i>
+                        <div class="card-body">
+                          <h5 class="text-muted">Mon May 26</h5>
+                        </div>
+        
+                        <div class="card-footer">
+        
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-6">
+                      <div class="card">
+                        <i class="fa fa-clock-o calendar text-danger" style="font-size: 90px;" aria-hidden="true"></i>
+                        <div class="card-body">
+                          <h5 class="text-muted">3.50 A</h5>
+                        </div>
+        
+                        <div class="card-footer">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+        
+
+
+
+      <!-- footer  section start. -->
+      <section>
+        <div class="col-lg-9 col-md-8 ml-auto">
+          <div class="row pt-md-5 mt-md-5 pt-lg-0">
+
+            <!-- Footer -->
+
+                    <!-- Footer -->
+      <footer class="page-footer bg-dark font-small unique-color-dark">
+
+        <div style="background-color: #6351ce;">
+          <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0 text-white">Get connected with us on social networks!</h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fa fa-facebook text-white mr-4" aria-hidden="true"></i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fa fa-twitter text-white mr-4" aria-hidden="true"></i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fa fa-google text-white mr-4" aria-hidden="true"></i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fa fa-instagram text-white mr-4" aria-hidden="true"></i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fa fa-github text-white" aria-hidden="true"></i>
+                </a>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container  text-center text-md-left mt-5">
+
+          <!-- Grid row -->
+          <div class="row mt-3 ">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+              <!-- Content -->
+              <h6 class="text-uppercase text-white font-weight-bold">Company name</h6>
+              <hr class=" accent-2 mb-4 mt-0 d-inline-block mx-auto" style="background: royalblue; width: 60px;">
+              <p class="text-white">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                consectetur
+                adipisicing elit.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold text-white">Products</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="background-color: royalblue; width: 60px;">
+              <p>
+                <a class="text-white" href="#!">MDBootstrap</a>
+              </p>
+              <p>
+                <a class="text-white" href="#!">MDWordPress</a>
+              </p>
+              <p>
+                <a class="text-white" href="#!">BrandFlow</a>
+              </p>
+              <p>
+                <a class="text-white" href="#!">Bootstrap Angular</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <!-- Links -->
+              <h6 class=" text-white text-uppercase font-weight-bold">Useful links</h6>
+              <hr class=" accent-2 mb-4 mt-0 d-inline-block mx-auto" style="background-color: royalblue; width: 60px;">
+              <p>
+                <a class="text-white" href="#!">Your Account</a>
+              </p>
+              <p>
+                <a class="text-white" href="#!">Become an Affiliate</a>
+              </p>
+              <p>
+                <a class="text-white" href="#!">Shipping Rates</a>
+              </p>
+              <p>
+                <a class="text-white" href="#!">Help</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+              <!-- Links -->
+              <h6 class="text-white text-uppercase font-weight-bold">Contact</h6>
+              <hr class=" text-white deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="background-color: royalblue; width: 60px;">
+              <p class="text-white">
+                <i class=" text-white fa fa-home mr-3"></i> New York, NY 10012, US</p>
+              <p class="text-white">
+                <i class=" text-whitefa fa-envelope mr-3"></i> info@example.com</p>
+              <p class="text-white">
+                <i class=" text-white fa fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p class="text-white">
+                <i class=" text-whitefa fa-print mr-3"></i> + 01 234 567 89</p>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="text-info footer-copyright text-center py-3 " style="background-color: slategrey;">© 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/"> Asif Ur Rahman.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+
+
+
+          </div>
+          </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- google chart script cdn.  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- tooltip script code.  -->
+    <script>
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+       })
+    </script>
+  
+    <!-- google line chart code.  -->
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!-- google line chart code.  -->
+
+    <!-- google pie chart code.  -->
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Export',     11],
+          ['Emport',      2],
+          ['Research',  2],
+          ['Revenue', 2],
+          ['Management',    7]
+        ]);
+
+        var options = {
+          title: 'Our Running Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!-- google pie chart code.  -->
+
+  </body>
+</html>
